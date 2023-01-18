@@ -1,3 +1,4 @@
+title: "正常登录成功"
 url: "api/login"
 method: "post"
 data:
@@ -9,6 +10,7 @@ check:
  data: []
 
 ---
+title: "密码错误"
 url: "api/login"
 method: "post"
 data:
@@ -20,6 +22,7 @@ check:
  data: []
 
 ---
+title: "密码为空"
 url: "api/login"
 method: "post"
 data:
@@ -31,6 +34,7 @@ check:
  data: []
 
 ---
+title: "多参"
 url: "api/login"
 method: "post"
 data:
@@ -42,6 +46,7 @@ check:
  message: "login success"
  data: []
 ---
+title: "少参"
 url: "api/login"
 method: "post"
 data:
@@ -51,6 +56,7 @@ check:
  message: "username or passwrord is None"
  data: []
 ---
+title: "少参"
 url: "api/login"
 method: "post"
 data:
@@ -60,8 +66,9 @@ check:
  message: "username or passwrord is None"
  data: []
 ---
+title: "少参"
 url: "api/login"
-method: "po"
+method: "post"
 data:
  username: "root"
 check:
@@ -70,254 +77,13 @@ check:
  data: []
 
 ---
+title: "少参"
 url: "api/login"
 method: "post"
 data:
- username: "root"
+ password: "root"
 check:
  status: 1010
  message: "username or passwrord is None"
  data: []
 
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 123
-check:
- status: 10200
- message: "login success"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 1234
-check:
- status: 10104
- message: "username or password error"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password:
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 123
- pass: 123
-check:
- status: 10200
- message: "login success"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 123
-check:
- status: 10200
- message: "login success"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 1234
-check:
- status: 10104
- message: "username or password error"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password:
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 123
- pass: 123
-check:
- status: 10200
- message: "login success"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 123
-check:
- status: 10200
- message: "login success"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 1234
-check:
- status: 10104
- message: "username or password error"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password:
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
-
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
- password: 123
- pass: 123
-check:
- status: 10200
- message: "login success"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []
----
-url: "api/login"
-method: "post"
-data:
- username: "root"
-check:
- status: 10102
- message: "username or passwrord is None"
- data: []

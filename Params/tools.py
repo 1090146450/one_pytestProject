@@ -1,4 +1,5 @@
 """yaml文件处理"""
+# coding=UTF-8
 import glob
 import os
 
@@ -13,20 +14,20 @@ class YamlUtil:
         if glob.glob(file_route):
             self.file_route = file_route
         else:
-            raise Exception(f"您输入的路径为:{file_route}"+"请检查文件路径")
+            raise Exception(f"您输入的路径为:{file_route}" + "请检查文件路径")
 
     def read_yaml(self):
         """读取yaml文件"""
-        with open(self.file_route, encoding="utf-8",mode="r") as f:
+        with open(self.file_route, encoding="gbk", mode="r") as f:
             val = yaml.load_all(stream=f, Loader=yaml.FullLoader)
             return [i for i in val]
 
     def write_yaml(self, data):
         """写入yaml文件"""
-        with open(self.file_route, encoding="utf-8", mode="a") as f:
+        with open(self.file_route, encoding="gbk", mode="a") as f:
             yaml.dump(data=data, stream=f, allow_unicode=True)
 
     def clean_yaml(self):
         """清空文件"""
-        with open(self.file_route,encoding="utf-8",mode="w") as f:
+        with open(self.file_route, encoding="gbk", mode="w") as f:
             f.truncate()

@@ -1,25 +1,22 @@
-# encoding='utf-8'
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+# encoding=utf-8
+import yagmail
 
 
 class send_email:
     def emil(self):
-        msg = MIMEMultipart()
-        msg['Subject'] = "222"
-        msg['From'] = "an1090146450@163.com"
-        msg['To'] = "1090146450@qq.com"
-        content = "<html><h1></h1></html>"
-        msg.attach(MIMEText(content, 'html', 'utf-8'))
-        # ´´½¨SMTP¶ÔÏó
-        smtpObj = smtplib.SMTP()
-        # »ñÈ¡Á¬½ÓÖ¸¶¨·şÎñÆ÷ ÌîĞ´µÄ¾ÍÊÇÓÊÏäSMTPµÄÁ¬½ÓµØÖ·ºÍ¶Ë¿ÚºÅ
-        smtpObj.connect("smtp.163.com", "25")
-        # µÇÂ¼ÓÊÏäºÍÊÚÈ¨Âë
-        smtpObj.login("an1090146450@163.com", "HMIJRCNOLTPZCUNW")
-        # ·¢¼şÈËµØÖ·£¬ÊÕ¼şÈËµØÖ·¿ÉÒÔÎªÁĞ±í×Ö·û´®["1XX@qq.com","2XX@qq.com"]£¬
-        # ÓÊ¼şÄÚÈİ:Ò»°ãÊÇmsg.as_string():ÊÇ½«msg(MIMEText¶ÔÏó»òÕßMIMEMultipart¶ÔÏó)±äÎªstr¡£
-        smtpObj.sendmail("an1090146450@163.com", "1090146450@qq.com", msg.as_string())
-        # ÍË³ö
-        smtpObj.quit()
+        # å»ºç«‹å¯¹è±¡è¿æ¥
+        yag = yagmail.SMTP(user={"an1090146450@163.com": "æµ‹è¯•æœåŠ¡å™¨"}, password="HMIJRCNOLTPZCUNW", host="smtp.163.com")
+        # æ”¶ä»¶äºº
+        to = ["1090146450@qq.com"]
+        # é‚®ä»¶ä¸»é¢˜
+        title = "æµ‹è¯•é‚®ä»¶"
+        # é‚®ä»¶æ­£æ–‡
+        cont = "è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•çš„é‚®ä»¶ï¼Œè¯·å‹¿å›å¤"
+        # é™„ä»¶åˆ—è¡¨
+        atta = "è¿™é‡Œå¡«å†™è·¯å¾„"
+        # æŠ„é€è”ç³»äºº
+        cc = "2933310375@qq.com"
+        # é‚®ä»¶å‘é€
+        yag.send(to=to, subject=title, contents=cont, cc=cc)
+        # å…³é—­é‚®ä»¶
+        yag.close()

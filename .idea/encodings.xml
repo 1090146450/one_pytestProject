@@ -2,6 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Commom/Email.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/logs/pytest-logs.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logs/test.log" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/run.py" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
