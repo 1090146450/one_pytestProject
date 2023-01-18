@@ -1,0 +1,120 @@
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:21 - 开始执行用例,标题:密码为空
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:21 - 开始执行用例,标题:正常登录成功
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:22 - 读取用例中数据
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:24 - URL读取成功,URL:http://101.42.5.22/api/login
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:22 - 读取用例中数据
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:26 - 接口传值:{'username': 'root', 'password': 123}
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:24 - URL读取成功,URL:http://101.42.5.22/api/login
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:28 - 请求方式:post
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:26 - 接口传值:{'username': 'root', 'password': None}
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:29 - 开始请求接口
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:28 - 请求方式:post
+2023-01-18 18:15:15.180 | INFO     | GuestTest.testCase.test_api:test_login:29 - 开始请求接口
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:32 - 接口请求成功
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:32 - 接口请求成功
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:36 - 请求返回数据:{'status': 10200, 'message': 'login success', 'data': []}
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:36 - 请求返回数据:{'status': 10102, 'message': 'username or passwrord is None', 'data': []}
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:45 - 
+
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:45 - 
+
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:21 - 开始执行用例,标题:多参
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:21 - 开始执行用例,标题:密码错误
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:22 - 读取用例中数据
+2023-01-18 18:15:15.196 | INFO     | GuestTest.testCase.test_api:test_login:22 - 读取用例中数据
+2023-01-18 18:15:15.212 | INFO     | GuestTest.testCase.test_api:test_login:24 - URL读取成功,URL:http://101.42.5.22/api/login
+2023-01-18 18:15:15.212 | INFO     | GuestTest.testCase.test_api:test_login:26 - 接口传值:{'username': 'root', 'password': 1234}
+2023-01-18 18:15:15.212 | INFO     | GuestTest.testCase.test_api:test_login:24 - URL读取成功,URL:http://101.42.5.22/api/login
+2023-01-18 18:15:15.212 | INFO     | GuestTest.testCase.test_api:test_login:28 - 请求方式:post
+2023-01-18 18:15:15.212 | INFO     | GuestTest.testCase.test_api:test_login:26 - 接口传值:{'username': 'root', 'password': 123, 'pass': 123}
+2023-01-18 18:15:15.212 | INFO     | GuestTest.testCase.test_api:test_login:29 - 开始请求接口
+2023-01-18 18:15:15.212 | INFO     | GuestTest.testCase.test_api:test_login:28 - 请求方式:post
+2023-01-18 18:15:15.212 | INFO     | GuestTest.testCase.test_api:test_login:29 - 开始请求接口
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:32 - 接口请求成功
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:36 - 请求返回数据:{'status': 10104, 'message': 'username or password error', 'data': []}
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:32 - 接口请求成功
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:45 - 
+
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:36 - 请求返回数据:{'status': 10200, 'message': 'login success', 'data': []}
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:45 - 
+
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:21 - 开始执行用例,标题:少参
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:22 - 读取用例中数据
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:21 - 开始执行用例,标题:少参
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:24 - URL读取成功,URL:http://101.42.5.22/api/login
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:22 - 读取用例中数据
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:26 - 接口传值:{'username': 'root'}
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:28 - 请求方式:post
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:29 - 开始请求接口
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:24 - URL读取成功,URL:http://101.42.5.22/api/login
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:26 - 接口传值:{'username': 'root'}
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:28 - 请求方式:post
+2023-01-18 18:15:15.228 | INFO     | GuestTest.testCase.test_api:test_login:29 - 开始请求接口
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:32 - 接口请求成功
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:36 - 请求返回数据:{'status': 10102, 'message': 'username or passwrord is None', 'data': []}
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:45 - 
+
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:32 - 接口请求成功
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:36 - 请求返回数据:{'status': 10102, 'message': 'username or passwrord is None', 'data': []}
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:45 - 
+
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:21 - 开始执行用例,标题:少参
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:21 - 开始执行用例,标题:少参
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:22 - 读取用例中数据
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:22 - 读取用例中数据
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:24 - URL读取成功,URL:http://101.42.5.22/api/login
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:24 - URL读取成功,URL:http://101.42.5.22/api/login
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:26 - 接口传值:{'password': 'root'}
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:26 - 接口传值:{'username': 'root'}
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:28 - 请求方式:post
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:29 - 开始请求接口
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:28 - 请求方式:post
+2023-01-18 18:15:15.244 | INFO     | GuestTest.testCase.test_api:test_login:29 - 开始请求接口
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:32 - 接口请求成功
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:32 - 接口请求成功
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:36 - 请求返回数据:{'status': 10102, 'message': 'username or passwrord is None', 'data': []}
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:36 - 请求返回数据:{'status': 10102, 'message': 'username or passwrord is None', 'data': []}
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.259 | DEBUG    | GuestTest.testCase.test_api:test_login:43 - 校验失败:assert 10102 == 1010
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:38 - 开始校验数据
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:41 - 数据校验完成
+2023-01-18 18:15:15.259 | INFO     | GuestTest.testCase.test_api:test_login:45 - 
+
