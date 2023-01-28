@@ -22,17 +22,27 @@ class ApiAutoLogin:
         return logger
 
 
-class MemoryLog():
+class MemoryLog:
     """在内存中写入log"""
 
     def __init__(self):
         self.f = StringIO()
 
-    def add(self, data):
-        """写入数据"""
+    def info(self, data):
+        """写入info数据"""
+        log_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S ")
         if not isinstance(data, str):
             raise Exception("请输入字符串")
-        self.f.write(data + "\n")
+        data = "info " + data
+        self.f.write(log_time + data + "\n")
+
+    def error(self, data):
+        """写入error数据"""
+        log_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S ")
+        if not isinstance(data, str):
+            raise Exception("请输入字符串")
+        data = "error " + data
+        self.f.write(log_time + data + "\n")
 
     def preservation(self):
         """保存数据"""
@@ -40,4 +50,4 @@ class MemoryLog():
         sink = os.getcwd() + f"/logs/{longname}.log"
         with open(sink, mode="a", encoding="GBK") as t:
             t.write(self.f.getvalue())
-
+        self.f.close()

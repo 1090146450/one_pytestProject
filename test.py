@@ -13,6 +13,10 @@ def driver():
 
 @pytest.mark.parametrize("dr", [1, 2, 3, 4])
 def test(driver, dr):
-    driver.add("开始验证")
-    driver.add("验证完成")
-    assert 1 == dr
+    for i in range(0, 2):
+        driver.info(f"开始验证{i}=={dr}")
+        if pytest.assume(i == dr):
+            driver.info("验证完成")
+        else:
+            driver.error(f"验证错误")
+    driver.info("\n")
