@@ -29,7 +29,7 @@ class Test_Url:
     @pytest.fixture(scope="function")
     def dr(self):
         """保存打印LOG"""
-        m = MemoryLog()
+        m = MemoryLog("w+")
         yield m
         allure.attach(body=m.f.getvalue(), name="loge", attachment_type=allure.attachment_type.TEXT)
         m.preservation()

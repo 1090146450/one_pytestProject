@@ -24,9 +24,11 @@ class ApiAutoLogin:
 
 class MemoryLog:
     """在内存中写入log"""
+    open_state = 0
 
-    def __init__(self):
+    def __init__(self, moder="a"):
         self.f = StringIO()
+        self.moder = moder
 
     def info(self, data):
         """写入info数据"""
@@ -48,6 +50,10 @@ class MemoryLog:
         """保存数据"""
         longname = datetime.now().strftime("%Y-%m-%d")  # 获取当前时间
         sink = os.getcwd() + f"/logs/{longname}.log"
+        if (self.moder == "w" or self.moder == "w+") and MemoryLog.open_state == 0:
+            with open(sink, mode="w+", encoding="GBK"):
+                MemoryLog.open_state == 1
+
         with open(sink, mode="a", encoding="GBK") as t:
             t.write(self.f.getvalue())
         self.f.close()
