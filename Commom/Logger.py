@@ -32,7 +32,7 @@ class MemoryLog:
         """写入info数据"""
         log_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S ")
         if not isinstance(data, str):
-            raise Exception("请输入字符串")
+            data = str(data)
         data = "info " + data
         self.f.write(log_time + data + "\n")
 
@@ -40,7 +40,7 @@ class MemoryLog:
         """写入error数据"""
         log_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S ")
         if not isinstance(data, str):
-            raise Exception("请输入字符串")
+            data = str(data)
         data = "error " + data
         self.f.write(log_time + data + "\n")
 

@@ -62,12 +62,16 @@ class Test_Url:
         guest_json = guest_data.json()  # 获取返回的JSON
         dr.info(f"请求返回数据:{guest_json}")
         for k, v in guest_json.items():
-            dr.info("开始校验数据{0}=={1}".format(driver["check"][k], v))
-            with allure.step("开始校验数据{0}=={1}".format(driver["check"][k], v)):
-                if pytest.assume(driver["check"][k] == v):  # 对返回数据和数据驱动中数据进行校验
-                    dr.info(f"数据校验完成")
-                else:
-                    dr.error(f"校验失败!")
+            dr.info("开始校验{0}  {1}=={2}".format(k, driver["check"][k], v))
+            with allure.step("开始校验{0}  {1}=={2}".format(k, driver["check"][k], v)):
+                try:
+                    if pytest.assume(driver["check"][k] == v):  # 对返回数据和数据驱动中数据进行校验
+                        dr.info(f"数据校验完成")
+                    else:
+                        dr.error(f"校验失败!")
+                except Exception as e:
+                    dr.error(e)
+                    raise e
         dr.info("\n")
 
     @allure.step("步骤2")
