@@ -22,9 +22,20 @@ class ApiAutoLogin:
         return logger
 
 
+def SinglethonClass(cls):
+    """创建单例修饰器"""
+    __strclass = {}
+
+    def atest(*args, **kwargs):
+        if cls not in __strclass:
+            __strclass[cls] = cls(*args, **kwargs)
+        return __strclass[cls]
+
+    return atest
+
+
 class MemoryLog:
     """在内存中写入log"""
-    open_state = 0
 
     def __init__(self, moder="a"):
         self.f = StringIO()
@@ -50,9 +61,9 @@ class MemoryLog:
         """保存数据"""
         longname = datetime.now().strftime("%Y-%m-%d")  # 获取当前时间
         sink = os.getcwd() + f"/logs/{longname}.log"
-        if (self.moder == "w" or self.moder == "w+") and MemoryLog.open_state == 0:
+        if (self.moder == "w" or self.moder == "w+"):
             with open(sink, mode="w+", encoding="GBK"):
-                MemoryLog.open_state == 1
+                pass
 
         with open(sink, mode="a", encoding="GBK") as t:
             t.write(self.f.getvalue())
