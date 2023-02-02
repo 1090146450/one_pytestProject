@@ -10,7 +10,7 @@
 
 下面是大致介绍：
 
-![image-20230202140231457](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230202140231457.png)
+![image-20230202140231457](D:\BaiduNetdiskDownload\GuestTest\Img\1.png)
 
 # 流程介绍：
 
