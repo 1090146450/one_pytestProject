@@ -8,9 +8,12 @@ import yaml
 
 class YamlUtil:
 
-    def __init__(self, file_name):
+    def __init__(self, file_name, file=None):
         """传入要打开文件"""
-        file_route = os.getcwd() + "\\Params\\" + file_name
+        if not file:
+            file_route = os.getcwd() + "\\Params\\" + file_name
+        else:
+            file_route = file
         if glob.glob(file_route):
             self.file_route = file_route
         else:

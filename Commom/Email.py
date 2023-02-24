@@ -1,11 +1,14 @@
 # encoding=utf-8
 import yagmail
+from Params import tools
 
 
 class send_email:
     def emil(self):
+        email_yam = tools.YamlUtil("", file="./Config/passwd.yaml").read_yaml()
         # 建立对象连接
-        yag = yagmail.SMTP(user={"an1090146450@163.com": "测试服务器"}, password="HMIJRCNOLTPZCUNW", host="smtp.163.com")
+        yag = yagmail.SMTP(user={email_yam[0]["email_account"]: "测试服务器"}, password=email_yam[0]["email_passwd"],
+                           host="smtp.qq.com")
         # 收件人
         to = ["1090146450@qq.com"]
         # 邮件主题
