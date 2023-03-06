@@ -24,7 +24,7 @@ class Test_Url:
     @pytest.fixture()
     def drse(self):
         """等待4S"""
-        yield time.sleep(4)
+        yield time.sleep(0)
 
     @pytest.fixture(scope="function")
     def dr(self):
@@ -59,7 +59,10 @@ class Test_Url:
             dr.info(f"接口请求成功")
         except Exception as e:
             dr.error(f"接口请求失败,失败原因如下:{e}\n")
-        guest_json = guest_data.json()  # 获取返回的JSON
+        try:
+            guest_json = guest_data.json()  # 获取返回的JSON
+        except Exception as e:
+            dr.error(f"获取JSON失败:{e}")
         dr.info(f"请求返回数据:{guest_json}")
         for k, v in guest_json.items():
             dr.info("开始校验{0}  {1}=={2}".format(k, driver["check"][k], v))
