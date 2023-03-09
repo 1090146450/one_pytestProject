@@ -11,7 +11,7 @@ class YamlUtil:
     def __init__(self, file_name, file=None):
         """传入要打开文件"""
         if not file:
-            file_route = os.getcwd() + "\\Params\\" + file_name
+            file_route = os.getcwd() + "/Params/" + file_name
         else:
             file_route = file
         if glob.glob(file_route):
