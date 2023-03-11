@@ -1,0 +1,8 @@
+2023-03-10 00:20:25 info 开始执行用例,标题:少参
+2023-03-10 00:20:25 info 读取用例中数据
+2023-03-10 00:20:25 info URL读取成功,URL:http://abc.twoitmen.club/api/login
+2023-03-10 00:20:25 info 接口传值:{'password': 'root'}
+2023-03-10 00:20:25 info 请求方式:post
+2023-03-10 00:20:25 info 开始请求接口
+2023-03-10 00:20:25 info 接口请求成功
+2023-03-10 00:20:25 error 获取JSON失败:Expecting value: line 1 column 1 (char 0)
