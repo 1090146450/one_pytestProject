@@ -5,7 +5,7 @@ from Params import tools
 
 class send_email:
     def emil(self):
-        email_yam = tools.YamlUtil("", file="../Config/passwd.yaml").read_yaml()
+        email_yam = tools.YamlUtil("", file="./Config/passwd.yaml").read_yaml()
         # 建立对象连接
         yag = yagmail.SMTP(user={email_yam[0]["email_account"]: "测试服务器"}, password=email_yam[0]["email_passwd"],
                            host="smtp.qq.com")
@@ -25,4 +25,4 @@ class send_email:
         yag.close()
 
 
-send_email().emil()
+
