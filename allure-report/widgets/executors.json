@@ -1,0 +1,1 @@
+[{"name":"Jenkins","type":"jenkins","url":"http://101.42.5.22:8081/","buildOrder":65,"buildName":"pytest #65","buildUrl":"http://101.42.5.22:8081/job/pytest/65/","reportName":"AllureReport","reportUrl":"http://101.42.5.22:8081/job/pytest/65/allure"}]
