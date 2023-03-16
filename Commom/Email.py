@@ -1,7 +1,7 @@
 # encoding=utf-8
 import yagmail
 from Params import tools
-from sys
+import sys
 
 class send_email:
     def emil(self):
