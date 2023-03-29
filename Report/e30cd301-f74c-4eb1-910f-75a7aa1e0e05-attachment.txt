@@ -1,0 +1,16 @@
+2023-03-29 23:33:14 info 开始执行用例,标题:多参
+2023-03-29 23:33:14 info 读取用例中数据
+2023-03-29 23:33:14 info URL读取成功,URL:http://abc.twoitmen.club/api/login
+2023-03-29 23:33:14 info 接口传值:{'username': 'root', 'password': 123, 'pass': 123}
+2023-03-29 23:33:14 info 请求方式:post
+2023-03-29 23:33:14 info 开始请求接口
+2023-03-29 23:33:14 info 接口请求成功
+2023-03-29 23:33:14 info 请求返回数据:{'status': 10104, 'message': 'username or password error', 'data': []}
+2023-03-29 23:33:14 info 开始校验status  10200==10104
+2023-03-29 23:33:14 error 校验失败!
+2023-03-29 23:33:14 info 开始校验message  login success==username or password error
+2023-03-29 23:33:14 error 校验失败!
+2023-03-29 23:33:14 info 开始校验data  []==[]
+2023-03-29 23:33:14 info 数据校验完成
+2023-03-29 23:33:14 info 
+
