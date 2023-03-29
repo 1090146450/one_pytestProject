@@ -10,7 +10,7 @@ class send_email:
         yag = yagmail.SMTP(user={email_yam[0]["email_account"]: "测试服务器"}, password=email_yam[0]["email_passwd"],
                            host="smtp.qq.com")
         # 收件人
-        to = ["1090146450@qq.com", "293310375@qq.com"]
+        to = ["293310375@qq.com"]
         # 邮件主题
         title = "Jenkins警告！"
         # 邮件正文
