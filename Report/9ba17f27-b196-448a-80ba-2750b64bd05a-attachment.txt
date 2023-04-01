@@ -1,0 +1,16 @@
+2023-04-01 23:33:12 info 开始执行用例,标题:少参
+2023-04-01 23:33:12 info 读取用例中数据
+2023-04-01 23:33:12 info URL读取成功,URL:http://abc.twoitmen.club/api/login
+2023-04-01 23:33:12 info 接口传值:{'username': 'root'}
+2023-04-01 23:33:12 info 请求方式:post
+2023-04-01 23:33:12 info 开始请求接口
+2023-04-01 23:33:12 info 接口请求成功
+2023-04-01 23:33:12 info 请求返回数据:{'status': 10102, 'message': 'username or passwrord is None', 'data': []}
+2023-04-01 23:33:12 info 开始校验status  10102==10102
+2023-04-01 23:33:12 info 数据校验完成
+2023-04-01 23:33:12 info 开始校验message  username or passwrord is None==username or passwrord is None
+2023-04-01 23:33:12 info 数据校验完成
+2023-04-01 23:33:12 info 开始校验data  []==[]
+2023-04-01 23:33:12 info 数据校验完成
+2023-04-01 23:33:12 info 
+
